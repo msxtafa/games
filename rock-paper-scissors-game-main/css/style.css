@@ -1,0 +1,101 @@
+*, *::after, *::before {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-color: white;
+  padding: 3em;
+  min-height: 100vh;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+h1 {
+  font-size: 0.9rem;
+}
+
+.d-none {
+  display: none;
+}
+
+.score {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.score .player-score, .score .computer-score {
+  text-align: center;
+}
+
+.game {
+  text-align: center;
+}
+
+.game .icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.game .icons .player-icon img {
+  -webkit-transform: scaleX(-1);
+          transform: scaleX(-1);
+}
+
+.game .icons img {
+  width: 150px;
+  display: block;
+  padding-bottom: 20px;
+}
+
+.game .selection {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 50%;
+  margin: 0 auto;
+}
+
+.game .selection button {
+  border: none;
+  border-radius: 25px;
+  margin: 0 1em;
+  padding: 2em;
+  width: 120px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 12px;
+  text-transform: uppercase;
+}
+
+.game .selection button:hover {
+  outline: 1px solid brown;
+}
